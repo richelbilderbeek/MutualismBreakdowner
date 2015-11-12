@@ -168,7 +168,8 @@ void ribi::mb::QtMutualismBreakdownerSpatialPlotDialog::StartRun()
   this->m_seagrass_widget->setEnabled(true);
   this->m_sulfide_widget->setEnabled(true);
 
-  m_simulation = std::make_unique<Simulation>(parameters);
+  //m_simulation = std::make_unique<Simulation>(parameters);
+  m_simulation.reset(new Simulation(parameters));
 
   DisplayGrid();
 

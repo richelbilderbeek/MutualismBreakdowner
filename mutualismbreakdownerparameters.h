@@ -44,24 +44,24 @@ struct Parameters
     const int any_n_timesteps
   );
 
-  auto GetSpatialDeltaT() const noexcept { return m_spatial_delta_t; }
-  auto GetSpatialHeight() const noexcept { return m_spatial_height; }
-  auto GetSpatialWidth() const noexcept { return m_spatial_width; }
-  auto GetTimeplotDeltaT() const noexcept { return m_timeplot_delta_t; }
+  const Time& GetSpatialDeltaT() const noexcept { return m_spatial_delta_t; }
+  int GetSpatialHeight() const noexcept { return m_spatial_height; }
+  int GetSpatialWidth() const noexcept { return m_spatial_width; }
+  const Time& GetTimeplotDeltaT() const noexcept { return m_timeplot_delta_t; }
 
-  auto GetInitialLoripesDensity() const noexcept { return m_initial_loripes_density; }
-  auto GetInitialSeagrassDensity() const noexcept { return m_initial_seagrass_density; }
-  auto GetInitialSulfideConcentration() const noexcept { return m_initial_sulfide_concentration; }
+  const SpeciesDensity& GetInitialLoripesDensity() const noexcept { return m_initial_loripes_density; }
+  const SpeciesDensity& GetInitialSeagrassDensity() const noexcept { return m_initial_seagrass_density; }
+  const Concentration& GetInitialSulfideConcentration() const noexcept { return m_initial_sulfide_concentration; }
 
-  auto GetNumberOfTimesteps() const noexcept { return n_timesteps; }
+  int GetNumberOfTimesteps() const noexcept { return n_timesteps; }
 
-  const auto& GetPoisoningFunction() const noexcept { return m_poisoning_function; }
-  const auto& GetSeagrassColonisationFunction() const noexcept { return m_seagrass_colonisation_function; }
-  const auto& GetSeagrassGrowthFunction() const noexcept { return m_seagrass_growth_function; }
-  const auto& GetSulfideConsumptionFunction() const noexcept { return m_sulfide_consumption_function; }
-  const auto& GetSulfideDetoxificationFunction() const noexcept { return m_sulfide_detoxification_function; }
-  const auto& GetSulfideDiffusionFunction() const noexcept { return m_sulfide_diffusion_function; }
-  const auto& GetSulfideProductionFunction() const noexcept { return m_sulfide_production_function; }
+  const std::shared_ptr<PoisoningFunction>& GetPoisoningFunction() const noexcept { return m_poisoning_function; }
+  const std::shared_ptr<SeagrassColonisationFunction>& GetSeagrassColonisationFunction() const noexcept { return m_seagrass_colonisation_function; }
+  const std::shared_ptr<SeagrassGrowthFunction>& GetSeagrassGrowthFunction() const noexcept { return m_seagrass_growth_function; }
+  const std::shared_ptr<SulfideConsumptionFunction>& GetSulfideConsumptionFunction() const noexcept { return m_sulfide_consumption_function; }
+  const std::shared_ptr<SulfideDetoxificationFunction>& GetSulfideDetoxificationFunction() const noexcept { return m_sulfide_detoxification_function; }
+  const std::shared_ptr<SulfideDiffusionFunction>& GetSulfideDiffusionFunction() const noexcept { return m_sulfide_diffusion_function; }
+  const std::shared_ptr<SulfideProductionFunction>& GetSulfideProductionFunction() const noexcept { return m_sulfide_production_function; }
 
   ///Create a testing parameter set
   static Parameters GetTest(const int i);
@@ -81,9 +81,10 @@ struct Parameters
   int m_spatial_width;
   Time m_timeplot_delta_t;
 
-  ribi::units::SpeciesDensity m_initial_loripes_density;
-  ribi::units::SpeciesDensity m_initial_seagrass_density;
-  ribi::units::Concentration m_initial_sulfide_concentration;
+
+  SpeciesDensity m_initial_loripes_density;
+  SpeciesDensity m_initial_seagrass_density;
+  Concentration m_initial_sulfide_concentration;
 
   std::shared_ptr<PoisoningFunction> m_poisoning_function;
   std::shared_ptr<SeagrassColonisationFunction> m_seagrass_colonisation_function;

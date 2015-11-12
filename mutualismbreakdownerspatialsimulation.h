@@ -20,7 +20,7 @@ struct SpatialSimulation
 
   void Change(const Time delta_t);
 
-  const auto& GetGrid() const noexcept { return m_grid; }
+  const Grid& GetGrid() const noexcept { return m_grid; }
 
   void KillSeagrass(const int x, const int y);
 

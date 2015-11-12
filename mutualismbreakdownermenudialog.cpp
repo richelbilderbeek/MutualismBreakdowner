@@ -36,10 +36,8 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include <QFile>
 
-//#include "asciiarter.h"
 #include "mutualismbreakdownermenudialog.h"
 #include "fileio.h"
-//#include "imagecanvas.h"
 #include "richelbilderbeekprogram.h"
 #include "testtimer.h"
 #include "trace.h"
@@ -69,7 +67,7 @@ ribi::About ribi::mb::MenuDialog::GetAbout() const noexcept
     "Greg Fivash and Richel Bilderbeek",
     "MutualismBreakdowner",
     "simulation",
-    "the 12th of May 2015",
+    "the 12th of November 2015",
     "2015-2015",
     "http://www.richelbilderbeek.nl/ToolMutualismBreakdowner.htm",
     GetVersion(),
@@ -80,16 +78,9 @@ ribi::About ribi::mb::MenuDialog::GetAbout() const noexcept
   return a;
 }
 
-boost::shared_ptr<const ribi::Program> ribi::mb::MenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p(new ProgramMutualismBreakdowner);
-  assert(p);
-  return p;
-}
-
 std::string ribi::mb::MenuDialog::GetVersion() const noexcept
 {
-  return "2.1";
+  return "2.2";
 }
 
 std::vector<std::string> ribi::mb::MenuDialog::GetVersionHistory() const noexcept
@@ -98,7 +89,8 @@ std::vector<std::string> ribi::mb::MenuDialog::GetVersionHistory() const noexcep
     "2015-05-03: Version 0.1: initial version with 3 ODEs",
     "2015-05-05: Version 1.0: implemented system of 4 ODEs, added menu screens",
     "2015-05-12: Version 2.0: implemented system of 2 ODEs",
-    "2015-05-13: Version 2.1: added spatial model"
+    "2015-05-13: Version 2.1: added spatial model",
+    "2015-11-12: Version 2.2: moved to own GitHub"
   };
 }
 

@@ -21,8 +21,8 @@ struct SeagrassSystem
   void Change(const Time delta_t);
 
   const Parameters& GetParameters() const noexcept { return m_parameters; }
-  const auto& GetSeagrassDensity() const noexcept { return m_seagrass_density; }
-  const auto& GetSulfideConcentration() const noexcept { return m_sulfide_concentration; }
+  const SpeciesDensity& GetSeagrassDensity() const noexcept { return m_seagrass_density; }
+  const Concentration& GetSulfideConcentration() const noexcept { return m_sulfide_concentration; }
   void SetSeagrassDensity(const SpeciesDensity seagrass_density) { m_seagrass_density = seagrass_density; }
   void SetSulfideConcentration(const Concentration sulfide_concentration) { m_sulfide_concentration = sulfide_concentration; }
 

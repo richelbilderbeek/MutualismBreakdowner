@@ -134,7 +134,7 @@ void ribi::mb::QtMutualismBreakdownerTimePlotDialog::on_button_run_clicked()
     std::begin(seagrass_densities_with_unit),
     std::end(seagrass_densities_with_unit),
     std::back_inserter(seagrass_densities),
-    [](const auto& d){ return d.value(); }
+    [](const ribi::units::SpeciesDensity& d){ return d.value(); }
   );
 
   std::vector<double> sulfide_concentrations;
@@ -142,7 +142,7 @@ void ribi::mb::QtMutualismBreakdownerTimePlotDialog::on_button_run_clicked()
     std::begin(sulfide_concentrations_with_unit),
     std::end(sulfide_concentrations_with_unit),
     std::back_inserter(sulfide_concentrations),
-    [](const auto& d){ return d.value(); }
+    [](const ribi::units::Concentration& d){ return d.value(); }
   );
 
   m_curve_seagrass_density->setData(

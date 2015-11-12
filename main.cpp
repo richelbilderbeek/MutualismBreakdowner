@@ -1,7 +1,6 @@
-#include "parameters.h"
-#include "timesimulation.h"
+#include "mutualismbreakdownerparameters.h"
+#include "mutualismbreakdownertimesimulation.h"
 #include "units.h"
-
 #include <iostream>
 
 int main()
@@ -12,8 +11,8 @@ int main()
     ribi::units::Test();
     ribi::units::TestSpeciesDensity();
     #endif // NDEBUG
-    Parameters p = Parameters::GetTest(0);
-    TimeSimulation s(p);
+    ribi::mb::Parameters p = ribi::mb::Parameters::GetTest(0);
+    ribi::mb::TimeSimulation s(p);
     s.Run();
     std::cout << s << std::endl;
     std::cout << "SIM FINISHED SUCCESSFULLY" << std::endl;
