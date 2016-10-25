@@ -4,7 +4,7 @@
 #include "mutualismbreakdownerparameters.h"
 #include "speciesdensity.h"
 #include "concentration.h"
-#include "ribi_time.h"
+#include "ribi_time_unit.h"
 
 namespace ribi {
 namespace mb {

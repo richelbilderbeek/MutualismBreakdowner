@@ -12,7 +12,6 @@
 #include "fileio.h"
 
 #ifndef NDEBUG
-#include "testtimer.h"
 void ribi::mb::PoisoningFunction::Test() noexcept
 {
   {
@@ -23,11 +22,7 @@ void ribi::mb::PoisoningFunction::Test() noexcept
   {
     ribi::fileio::FileIo();
   }
-  const ribi::TestTimer test_timer(__func__,__FILE__,1.0);
   using ribi::fileio::FileIo;
-  {
-    const InvertedExponentialPoisoning f;
-  }
   /*
   {
     const InvertExponentialPoisoning f;

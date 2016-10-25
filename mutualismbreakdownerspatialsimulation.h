@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "mutualismbreakdownerparameters.h"
-#include "ribi_time.h"
+#include "ribi_time_unit.h"
 #include "mutualismbreakdownerseagrasssystem.h"
 
 namespace ribi {

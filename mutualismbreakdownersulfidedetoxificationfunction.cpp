@@ -10,7 +10,6 @@
 #include <boost/units/io.hpp>
 
 #include "fileio.h"
-#include "testtimer.h"
 
 #ifndef NDEBUG
 void ribi::mb::SulfideDetoxificationFunction::Test() noexcept
@@ -20,10 +19,6 @@ void ribi::mb::SulfideDetoxificationFunction::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  {
-    ribi::fileio::FileIo();
-  }
-  const ribi::TestTimer test_timer(__func__,__FILE__,1.0);
   using ribi::fileio::FileIo;
   {
     const LinearSulfideDetoxification f;

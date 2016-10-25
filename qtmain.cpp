@@ -3,7 +3,6 @@
 #include "mutualismbreakdownerpoisoningfunction.h"
 #include "mutualismbreakdownersulfideconsumptionfunction.h"
 #include "mutualismbreakdownerparameters.h"
-#include "units.h"
 #include "qtmutualismbreakdownerequilibriumdialog.h"
 #include "qtmutualismbreakdownertimeplotdialog.h"
 
@@ -51,14 +50,6 @@
 int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
-  ribi::mb::QtMutualismBreakdownerTimePlotDialog();
-  //QtMutualismBreakdownerEquilibriumDialog();
-  #ifndef NDEBUG
-  ribi::units::TestTime();
-  ribi::units::Test();
-  #endif
-  ribi::mb::InvertedExponentialPoisoning();
-  ribi::mb::Parameters();
   ribi::mb::QtMutualismBreakdownerMenuDialog w;
   w.show();
   return a.exec();

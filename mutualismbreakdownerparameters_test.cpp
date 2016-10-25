@@ -9,7 +9,6 @@
 
 #include "fileio.h"
 #include "mutualismbreakdownersulfideconsumptionfunction.h"
-#include "testtimer.h"
 
 void ribi::mb::Parameters::Test() noexcept
 {
@@ -21,7 +20,6 @@ void ribi::mb::Parameters::Test() noexcept
   {
     ribi::fileio::FileIo();
   }
-  const ribi::TestTimer test_timer(__func__,__FILE__,1.0);
   using ribi::fileio::FileIo;
   //operator==
   {

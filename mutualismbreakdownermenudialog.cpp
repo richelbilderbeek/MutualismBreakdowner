@@ -38,16 +38,11 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include "mutualismbreakdownermenudialog.h"
 #include "fileio.h"
-#include "richelbilderbeekprogram.h"
-#include "testtimer.h"
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 ribi::mb::MenuDialog::MenuDialog()
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 int ribi::mb::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
@@ -73,8 +68,6 @@ ribi::About ribi::mb::MenuDialog::GetAbout() const noexcept
     GetVersion(),
     GetVersionHistory()
   );
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
-  a.AddLibrary("Trace version: " + Trace::GetVersion());
   return a;
 }
 
@@ -106,18 +99,3 @@ ribi::Help ribi::mb::MenuDialog::GetHelp() const noexcept
     }
   );
 }
-
-#ifndef NDEBUG
-void ribi::mb::MenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    fileio::FileIo();
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

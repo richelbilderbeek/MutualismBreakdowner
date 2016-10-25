@@ -2,6 +2,7 @@
 #define SEAGRASSCOLONISATIONFUNCTION_H
 
 #include <memory>
+#include <vector>
 #include "rate.h"
 #include "speciesdensity.h"
 #include "speciesgrowth.h"

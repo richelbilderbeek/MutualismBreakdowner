@@ -9,7 +9,6 @@
 #include <boost/units/io.hpp>
 
 #include "fileio.h"
-#include "testtimer.h"
 #include "speciesdensity.h"
 #include "speciesgrowth.h"
 
@@ -29,11 +28,6 @@ void ribi::mb::SeagrassGrowthFunction::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  {
-    ribi::fileio::FileIo();
-
-  }
-  const ribi::TestTimer test_timer(__func__,__FILE__,1.0);
   using ribi::fileio::FileIo;
   using boost::units::si::species_per_square_meter;
   using boost::units::si::per_second;
