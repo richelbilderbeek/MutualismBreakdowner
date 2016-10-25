@@ -25,9 +25,7 @@ ribi::mb::TimeSimulation::TimeSimulation(const Parameters& parameters)
     m_timeseries{}
 
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 void ribi::mb::TimeSimulation::Run()

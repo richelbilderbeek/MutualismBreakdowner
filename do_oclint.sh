@@ -4,9 +4,8 @@
   -disable-rule ShortVariableName \
   main.cpp \
   -- \
-  -c -std=c++11 -fPIC \
+  -c -std=c++14 \
   -I../RibiClasses/CppAbout \
-  -I../ConceptMap \
   -I../RibiClasses/CppContainer \
   -I../RibiClasses/CppCounter \
   -I../RibiClasses/CppFuzzy_equal_to \
@@ -17,20 +16,11 @@
   -I../RibiClasses/CppMenuDialog \
   -I../RibiClasses/CppPlane \
   -I../RibiClasses/CppQtAboutDialog \
-  -I../RibiClasses/CppQtArrowItem \
-  -I../QtConceptMap \
   -I../RibiClasses/CppQtHideAndShowDialog \
-  -I../QtKeyboardFriendlyGraphicsView \
-  -I../RibiClasses/CppQtQuadBezierArrowItem \
-  -I../RibiClasses/CppQtRoundedEditRectItem \
-  -I../RibiClasses/CppQtRoundedRectItem \
-  -I../RibiClasses/CppQtScopedDisable \
   -I../RibiClasses/CppRibiRegex \
   -I../RibiClasses/CppTrace \
   -I../RibiClasses/CppXml \
-  -I../BoostGraphTutorial/BoostGraphTutorial \
-  -I../StyleSheetSetter \
-  -I../RibiLibraries/Apfloat \
+  -I../RibiUnits \
   -I/usr/include/c++/5 \
   -I/usr/include/x86_64-linux-gnu/c++/5 \
   -I/usr/include/qt4 \

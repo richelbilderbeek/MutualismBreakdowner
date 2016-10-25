@@ -10,8 +10,6 @@
 #include "qtmutualismbreakdownerspatialplotdialog.h"
 #include "qtmutualismbreakdownerequilibriumdialog.h"
 #include "qtpoisoningfunctionwidget.h"
-#include "trace.h"
-#include "testtimer.h"
 #include "ui_qtmutualismbreakdownermenudialog.h"
 #pragma GCC diagnostic pop
 
@@ -59,10 +57,6 @@ void ribi::mb::QtMutualismBreakdownerMenuDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  {
-    ribi::mb::MenuDialog().GetAbout();
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   QtMutualismBreakdownerMenuDialog();
 }
 #endif
@@ -71,7 +65,6 @@ void ribi::mb::QtMutualismBreakdownerMenuDialog::on_button_start_time_clicked()
 {
   QtMutualismBreakdownerTimePlotDialog d;
   ShowChild(&d);
-
 }
 
 void ribi::mb::QtMutualismBreakdownerMenuDialog::on_button_start_spatial_clicked()

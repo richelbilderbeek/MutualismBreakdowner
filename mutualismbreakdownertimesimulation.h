@@ -27,10 +27,6 @@ struct TimeSimulation
   private:
   const Parameters m_parameters;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
-
   std::vector<SpeciesDensity> m_seagrass_densities;
   std::vector<Concentration> m_sulfide_concentrations;
   std::vector<double> m_timeseries;

@@ -6,13 +6,16 @@ include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
 include(../RibiUnits/RibiUnits.pri)
 include(MutualismBreakdownerConsole.pri)
 
+SOURCES += main.cpp
+
 QMAKE_CXX = g++-5
 QMAKE_LINK = g++-5
 QMAKE_CC = gcc-5
 # Qt goes bad with -Weffc++
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
 
-SOURCES += main.cpp
+# QResources give this error
+QMAKE_CXXFLAGS += -Wno-unused-variable
 
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
