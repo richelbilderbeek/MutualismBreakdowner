@@ -40,10 +40,10 @@ script:
   - ./build_other_githubs.sh
   - qmake MutualismBreakdownerConsole.pro
   - make
-  - ./MutualismBreakdownerConsole.pro 
+  - ./MutualismBreakdownerConsole
   - qmake MutualismBreakdownerDesktop.pro
   - make
-  - ./MutualismBreakdownerDesktop.pro &
+  - ./MutualismBreakdownerDesktop &
   - sleep 10
   - sudo killall -9 MutualismBreakdownerDesktop
   - ./get_code_cov.sh >/dev/null
