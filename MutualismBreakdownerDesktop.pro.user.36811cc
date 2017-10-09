@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<!-- Written by QtCreator 4.1.0, 2017-10-05T16:48:42. -->
-=======
-<!-- Written by QtCreator 4.1.0, 2017-10-07T20:32:58. -->
->>>>>>> af72f1cd5fc36274593bd9ad06204c92a6e71a58
+<!-- Written by QtCreator 4.1.0, 2017-10-01T15:20:01. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{e43b2b55-38bc-4404-a58a-81e9f14a55e3}</value>
+  <value type="QByteArray">{36811ccc-6987-450b-922e-4d5bc84fd485}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -58,14 +54,16 @@
  </data>
  <data>
   <variable>ProjectExplorer.Project.PluginSettings</variable>
-  <valuemap type="QVariantMap"/>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="ClangStaticAnalyzer.SuppressedDiagnostics"/>
+  </valuemap>
  </data>
  <data>
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{aa4160c3-033e-4a91-92db-3b23e1afe1ab}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{abb0d89d-13e3-4aae-a1aa-353e7d6e9678}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
