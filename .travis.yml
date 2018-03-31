@@ -51,10 +51,10 @@ before_script:
 script: 
   - ./download_other_githubs.sh
   - ./build_other_githubs.sh
-  - qmake MutualismBreakdownerConsole.pro
+  - qmake -qt=qt5 MutualismBreakdownerConsole.pro
   - make
   - ./MutualismBreakdownerConsole
-  - qmake MutualismBreakdownerDesktop.pro
+  - qmake -qt=qt5 MutualismBreakdownerDesktop.pro
   - make
   - ./MutualismBreakdownerDesktop &
   - sleep 10
