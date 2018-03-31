@@ -12,11 +12,8 @@ include(MutualismBreakdownerDesktop.pri)
 
 SOURCES += qtmain.cpp
 
-
-QMAKE_CXX = g++-5
-QMAKE_LINK = g++-5
-QMAKE_CC = gcc-5
 # Qt goes bad with -Weffc++
+CONFIG += c++14
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
 
 # Qt
@@ -30,3 +27,5 @@ QMAKE_CXXFLAGS += -Wno-unused-variable
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
+# Thanks QDateTime
+QMAKE_CXXFLAGS += -Wno-unused-result

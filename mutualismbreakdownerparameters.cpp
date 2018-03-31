@@ -159,7 +159,7 @@ void ribi::mb::Parameters::SetTimeplotDeltaT(const Time any_delta_t)
   m_timeplot_delta_t = any_delta_t;
 }
 
-void ribi::mb::Parameters::SetInitialSeagrassDensity(const ribi::units::SpeciesDensity any_initial_seagrass_density) noexcept
+void ribi::mb::Parameters::SetInitialSeagrassDensity(const ribi::units::SpeciesDensity any_initial_seagrass_density)
 {
   if (any_initial_seagrass_density < 0.0 * boost::units::si::species_per_square_meter)
   {

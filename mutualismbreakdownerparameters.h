@@ -67,7 +67,7 @@ struct Parameters
   static Parameters GetTest(const int i);
 
   void SetTimeplotDeltaT(const Time any_delta_t);
-  void SetInitialSeagrassDensity(const ribi::units::SpeciesDensity any_initial_seagrass_density) noexcept;
+  void SetInitialSeagrassDensity(const ribi::units::SpeciesDensity any_initial_seagrass_density);
   void SetPoisoningFunction(const std::shared_ptr<PoisoningFunction> any_poisoning_function);
 
   #ifndef NDEBUG
