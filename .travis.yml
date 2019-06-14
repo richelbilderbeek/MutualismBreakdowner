@@ -12,6 +12,8 @@ addons:
 install: 
   # Qt5
   - sudo apt-get install -qq qt5-qmake qt5-default
+  # Qwt
+  - sudo apt-get install -qq libqwt-qt5-dev
   # cppcheck
   - sudo apt-get install -qq cppcheck
   # Codecov
