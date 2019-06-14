@@ -33,3 +33,4 @@ release/
 .qmake.stash
 Makefile
 Makefile.*
+*.zip
