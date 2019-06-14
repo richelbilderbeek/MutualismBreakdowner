@@ -8,25 +8,20 @@ cache: packages
 addons:
   apt: 
     packages: 
+      - cppcheck
       - libboost-all-dev
+      - libqwt-qt5-dev
+      - npm
       - qt5-qmake 
       - qt5-default
+      - sloccount
 
 install: 
-  # Qt5
-  #- sudo apt-get install -qq qt5-qmake qt5-default
-  # Qwt
-  - sudo apt-get install -qq libqwt-qt5-dev
-  # cppcheck
-  - sudo apt-get install -qq cppcheck
   # Codecov
   - sudo pip install codecov
   # Check dead links
-  - sudo apt-get install -qq npm
   - npm config set strict-ssl false
   - sudo npm install -g markdown-link-check
-  # SLOCcount
-  - sudo apt-get install sloccount
   # OCLint
   - ./install_oclint.sh
 
