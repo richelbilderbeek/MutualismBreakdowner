@@ -32,7 +32,7 @@ script:
   - ./download_other_githubs.sh
   - qmake -qt=qt5 MutualismBreakdownerConsole.pro
   - make --silent
-  - ./MutualismBreakdownerConsole
+  - ./MutualismBreakdownerConsole >/dev/null
   - qmake -qt=qt5 MutualismBreakdownerDesktop.pro
   - make --silent
   - ./MutualismBreakdownerDesktop &
