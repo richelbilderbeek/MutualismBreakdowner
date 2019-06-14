@@ -8,7 +8,6 @@
 #include <QFileDialog>
 #include <QGridLayout>
 
-#include <qwt_plot_grid.h>
 #include <qwt_plot.h>
 #include <qwt_plot_curve.h>
 
@@ -18,6 +17,7 @@
 #if QWT_VERSION >= 0x060100 || !WIN32
 #include <qwt_point_data.h>
 #include <qwt_plot_zoomer.h>
+#include <qwt_plot_grid.h>
 #endif
 
 ribi::mb::QtMutualismBreakdownerTimePlotDialog::QtMutualismBreakdownerTimePlotDialog(QWidget *parent) :
@@ -51,10 +51,10 @@ ribi::mb::QtMutualismBreakdownerTimePlotDialog::QtMutualismBreakdownerTimePlotDi
     }
   )
   {
+    #if QWT_VERSION >= 0x060100 || !WIN32
     QwtPlotGrid * const grid = new QwtPlotGrid;
     grid->setPen(QPen(QColor(128,128,128)));
     grid->attach(plot);
-    #if QWT_VERSION >= 0x060100 || !WIN32
     new QwtPlotZoomer(plot->canvas());
     #endif
   }
