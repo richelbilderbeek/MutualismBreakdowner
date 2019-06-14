@@ -3,15 +3,18 @@ dist: xenial
 compiler:
   - gcc
 
+cache: packages
 
 addons:
-  # Boost
   apt: 
-    packages: libboost-all-dev
+    packages: 
+      - libboost-all-dev
+      - qt5-qmake 
+      - qt5-default
 
 install: 
   # Qt5
-  - sudo apt-get install -qq qt5-qmake qt5-default
+  #- sudo apt-get install -qq qt5-qmake qt5-default
   # Qwt
   - sudo apt-get install -qq libqwt-qt5-dev
   # cppcheck
