@@ -13,7 +13,7 @@ C++ simulation (both non-spatial and spatial) of a possible mutalistic breakdown
 
 ![Spatial version](MutualismBreakdownerSpatial.png)
 
-## Resources
+## Videos
 
- * [MutualismBreakdowner timeplot video (ogv)](MutualismBreakdownerTimeplot.ogv)
- * [MutualismBreakdowner spatial video (ogv)](MutualismBreakdownerSpatial.ogv)
+ * MutualismBreakdowner timeplot video: [YouTube](https://youtu.be/Nd7-sO1qmMs) [ogv](http://richelbilderbeek.nl/MutualismBreakdownerTimeplot.ogv)
+ * MutualismBreakdowner spatial video: [YouTube](https://youtu.be/NwoaLe5XSiI) [ogv](http://richelbilderbeek.nl/MutualismBreakdownerSpatial.ogv)
