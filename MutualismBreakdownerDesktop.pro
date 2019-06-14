@@ -4,7 +4,6 @@ include(../RibiClasses/CppHelp/CppHelp.pri)
 include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
 include(../RibiClasses/CppQtAboutDialog/CppQtAboutDialog.pri)
 include(../RibiClasses/CppQtHideAndShowDialog/CppQtHideAndShowDialog.pri)
-include(../RibiLibraries/Qwt.pri)
 
 #Specific, console
 include(../RibiUnits/RibiUnits.pri)
@@ -31,3 +30,13 @@ LIBS += -lgcov
 
 # Thanks QDateTime
 QMAKE_CXXFLAGS += -Wno-unused-result
+
+# Qwt
+# Normal compiling
+LIBS += -lqwt-qt5
+INCLUDEPATH += /usr/include/qwt
+
+# For crosscompiling
+#INCLUDEPATH += /home/richel/GitHubs/RibiLibraries/mxe/usr/i686-w64-mingw32.static/qt5/include
+#LIBS += -lqwt
+#QT += svg
