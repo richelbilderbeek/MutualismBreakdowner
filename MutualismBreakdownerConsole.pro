@@ -8,11 +8,12 @@ include(MutualismBreakdownerConsole.pri)
 
 SOURCES += main.cpp
 
-QMAKE_CXX = g++-5
-QMAKE_LINK = g++-5
-QMAKE_CC = gcc-5
+# C++14
+CONFIG += c++14
+QMAKE_CXXFLAGS += -std=c++14
+
 # Qt goes bad with -Weffc++
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 
 # QResources give this error
 QMAKE_CXXFLAGS += -Wno-unused-variable
@@ -20,6 +21,9 @@ QMAKE_CXXFLAGS += -Wno-unused-variable
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
+
+# Qt
+QT += core gui
 
 # Boost.Test
 LIBS += -lboost_unit_test_framework

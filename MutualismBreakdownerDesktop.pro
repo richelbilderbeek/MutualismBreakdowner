@@ -12,13 +12,15 @@ include(MutualismBreakdownerDesktop.pri)
 
 SOURCES += qtmain.cpp
 
-# Qt goes bad with -Weffc++
+# C++14
 CONFIG += c++14
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+QMAKE_CXXFLAGS += -std=c++14
+
+# Qt goes bad with -Weffc++
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 
 # Qt
-equals(QT_MAJOR_VERSION, 4): LIBS +=  -lQtSvg
-greaterThan(QT_MAJOR_VERSION, 4): QT +=  concurrent opengl printsupport
+QT += core gui widgets
 
 # QResources give this error
 QMAKE_CXXFLAGS += -Wno-unused-variable
