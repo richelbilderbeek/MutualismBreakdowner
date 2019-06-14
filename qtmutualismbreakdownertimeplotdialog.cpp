@@ -8,13 +8,13 @@
 #include <QFileDialog>
 #include <QGridLayout>
 
-#include <qwt_plot.h>
 #include <qwt_plot_curve.h>
 
 #include "mutualismbreakdownertimesimulation.h"
 #include "ui_qtmutualismbreakdownertimeplotdialog.h"
 #include "qtmutualismbreakdownerparameterswidget.h"
 #if QWT_VERSION >= 0x060100 || !WIN32
+#include <qwt_plot.h>
 #include <qwt_point_data.h>
 #include <qwt_plot_zoomer.h>
 #include <qwt_plot_grid.h>
