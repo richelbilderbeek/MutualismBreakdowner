@@ -1,48 +1,48 @@
-include(../MutualismBreakdowner/MutualismBreakdownerConsole.pri)
+include($$PWD/MutualismBreakdownerConsole.pri)
 
 SOURCES += \
-    ../MutualismBreakdowner/qtmutualismbreakdownertimeplotdialog.cpp \
-    ../MutualismBreakdowner/qtmutualismbreakdownertimeplotdialog_test.cpp \
-    ../MutualismBreakdowner/qtmutualismbreakdownermenudialog.cpp \
-    ../MutualismBreakdowner/qtmutualismbreakdownerparameterswidget.cpp \
-    ../MutualismBreakdowner/qtsulfideconsumptionfunctionwidget.cpp \
-    ../MutualismBreakdowner/qtmutualismbreakdownerparameterswidget_test.cpp \
-    ../MutualismBreakdowner/qtpoisoningfunctionwidget.cpp \
-    ../MutualismBreakdowner/qtpoisoningfunctionwidget_test.cpp \
-    ../MutualismBreakdowner/qtseagrassgrowthfunctionwidget.cpp \
-    ../MutualismBreakdowner/qtsulfideproductionfunctionwidget.cpp \
-    ../MutualismBreakdowner/qtsulfidedetoxificationfunctionwidget.cpp \
-    ../MutualismBreakdowner/qtsulfidediffusionfunctionwidget.cpp \
-    ../MutualismBreakdowner/qtmutualismbreakdownerspatialplotdialog.cpp \
-    ../MutualismBreakdowner/qtmutualismbreakdownerspatialwidget.cpp \
-    ../MutualismBreakdowner/qtseagrasscolonisationfunctionwidget.cpp
+    $$PWD/qtmutualismbreakdownertimeplotdialog.cpp \
+    $$PWD/qtmutualismbreakdownertimeplotdialog_test.cpp \
+    $$PWD/qtmutualismbreakdownermenudialog.cpp \
+    $$PWD/qtmutualismbreakdownerparameterswidget.cpp \
+    $$PWD/qtsulfideconsumptionfunctionwidget.cpp \
+    $$PWD/qtmutualismbreakdownerparameterswidget_test.cpp \
+    $$PWD/qtpoisoningfunctionwidget.cpp \
+    $$PWD/qtpoisoningfunctionwidget_test.cpp \
+    $$PWD/qtseagrassgrowthfunctionwidget.cpp \
+    $$PWD/qtsulfideproductionfunctionwidget.cpp \
+    $$PWD/qtsulfidedetoxificationfunctionwidget.cpp \
+    $$PWD/qtsulfidediffusionfunctionwidget.cpp \
+    $$PWD/qtmutualismbreakdownerspatialplotdialog.cpp \
+    $$PWD/qtmutualismbreakdownerspatialwidget.cpp \
+    $$PWD/qtseagrasscolonisationfunctionwidget.cpp
 
 
 HEADERS  += \
-    ../MutualismBreakdowner/qtmutualismbreakdownertimeplotdialog.h \
-    ../MutualismBreakdowner/qtmutualismbreakdownermenudialog.h \
-    ../MutualismBreakdowner/qtmutualismbreakdownerparameterswidget.h \
-    ../MutualismBreakdowner/qtsulfideconsumptionfunctionwidget.h \
-    ../MutualismBreakdowner/qtpoisoningfunctionwidget.h \
-    ../MutualismBreakdowner/qtseagrassgrowthfunctionwidget.h \
-    ../MutualismBreakdowner/qtsulfideproductionfunctionwidget.h \
-    ../MutualismBreakdowner/qtsulfidedetoxificationfunctionwidget.h \
-    ../MutualismBreakdowner/qtsulfidediffusionfunctionwidget.h \
-    ../MutualismBreakdowner/qtmutualismbreakdownerspatialplotdialog.h \
-    ../MutualismBreakdowner/qtmutualismbreakdownerspatialwidget.h \
-    ../MutualismBreakdowner/qtseagrasscolonisationfunctionwidget.h
+    $$PWD/qtmutualismbreakdownertimeplotdialog.h \
+    $$PWD/qtmutualismbreakdownermenudialog.h \
+    $$PWD/qtmutualismbreakdownerparameterswidget.h \
+    $$PWD/qtsulfideconsumptionfunctionwidget.h \
+    $$PWD/qtpoisoningfunctionwidget.h \
+    $$PWD/qtseagrassgrowthfunctionwidget.h \
+    $$PWD/qtsulfideproductionfunctionwidget.h \
+    $$PWD/qtsulfidedetoxificationfunctionwidget.h \
+    $$PWD/qtsulfidediffusionfunctionwidget.h \
+    $$PWD/qtmutualismbreakdownerspatialplotdialog.h \
+    $$PWD/qtmutualismbreakdownerspatialwidget.h \
+    $$PWD/qtseagrasscolonisationfunctionwidget.h
 
 FORMS += \
-    ../MutualismBreakdowner/qtmutualismbreakdownertimeplotdialog.ui \
-    ../MutualismBreakdowner/qtmutualismbreakdownermenudialog.ui \
-    ../MutualismBreakdowner/qtmutualismbreakdownerparameterswidget.ui \
-    ../MutualismBreakdowner/qtsulfideconsumptionfunctionwidget.ui \
-    ../MutualismBreakdowner/qtpoisoningfunctionwidget.ui \
-    ../MutualismBreakdowner/qtseagrassgrowthfunctionwidget.ui \
-    ../MutualismBreakdowner/qtsulfideproductionfunctionwidget.ui \
-    ../MutualismBreakdowner/qtsulfidedetoxificationfunctionwidget.ui \
-    ../MutualismBreakdowner/qtsulfidediffusionfunctionwidget.ui \
-    ../MutualismBreakdowner/qtmutualismbreakdownerspatialplotdialog.ui \
-    ../MutualismBreakdowner/qtmutualismbreakdownerspatialwidget.ui \
-    ../MutualismBreakdowner/qtseagrasscolonisationfunctionwidget.ui
+    $$PWD/qtmutualismbreakdownertimeplotdialog.ui \
+    $$PWD/qtmutualismbreakdownermenudialog.ui \
+    $$PWD/qtmutualismbreakdownerparameterswidget.ui \
+    $$PWD/qtsulfideconsumptionfunctionwidget.ui \
+    $$PWD/qtpoisoningfunctionwidget.ui \
+    $$PWD/qtseagrassgrowthfunctionwidget.ui \
+    $$PWD/qtsulfideproductionfunctionwidget.ui \
+    $$PWD/qtsulfidedetoxificationfunctionwidget.ui \
+    $$PWD/qtsulfidediffusionfunctionwidget.ui \
+    $$PWD/qtmutualismbreakdownerspatialplotdialog.ui \
+    $$PWD/qtmutualismbreakdownerspatialwidget.ui \
+    $$PWD/qtseagrasscolonisationfunctionwidget.ui
 

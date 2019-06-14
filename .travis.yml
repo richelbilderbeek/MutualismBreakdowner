@@ -30,7 +30,6 @@ services:
 
 script: 
   - ./download_other_githubs.sh
-  - ./build_other_githubs.sh
   - qmake -qt=qt5 MutualismBreakdownerConsole.pro
   - make --silent
   - ./MutualismBreakdownerConsole
