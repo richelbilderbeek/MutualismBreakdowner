@@ -27,3 +27,9 @@
 *.out
 *.app
 *.pro.user
+ui_*
+release/
+*_plugin_import.cpp
+.qmake.stash
+Makefile
+Makefile.*
