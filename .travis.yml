@@ -9,7 +9,6 @@ addons:
   apt: 
     packages: 
       - cppcheck
-      - libboost-all-dev
       - libqwt-qt5-dev
       - npm
       - qt5-qmake 
@@ -17,6 +16,9 @@ addons:
       - sloccount
 
 install: 
+  - sudo apt update -qq
+  # Boost
+  - sudo apt install -qq libboost-all-dev
   # Codecov
   - sudo pip install codecov
   # Check dead links
