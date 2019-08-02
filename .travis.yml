@@ -10,10 +10,10 @@ addons:
     packages: 
       - cppcheck
       - libqwt-qt5-dev
-      - npm
       - qt5-qmake 
       - qt5-default
       - sloccount
+
 
 install: 
   - sudo apt update -qq
@@ -22,6 +22,7 @@ install:
   # Codecov
   - sudo pip install codecov
   # Check dead links
+  - sudo apt-get install -qq npm
   - npm config set strict-ssl false
   - sudo npm install -g markdown-link-check
   # OCLint
