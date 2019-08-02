@@ -8,9 +8,9 @@ include(MutualismBreakdownerConsole.pri)
 
 SOURCES += main.cpp
 
-# C++14
-CONFIG += c++14
-QMAKE_CXXFLAGS += -std=c++14
+# C++17
+CONFIG += c++17
+QMAKE_CXXFLAGS += -std=c++17
 
 # Qt goes bad with -Weffc++
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror
