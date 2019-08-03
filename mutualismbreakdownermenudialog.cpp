@@ -22,7 +22,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 //
 //From http://www.richelbilderbeek.nl/ToolMutualismBreakdowner.htm
 //---------------------------------------------------------------------------
-#pragma GCC diagnostic push
+
 
 
 #include "mutualismbreakdownermenudialog.h"
@@ -38,7 +38,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include "mutualismbreakdownermenudialog.h"
 #include "fileio.h"
-#pragma GCC diagnostic pop
+
 
 ribi::mb::MenuDialog::MenuDialog()
 {

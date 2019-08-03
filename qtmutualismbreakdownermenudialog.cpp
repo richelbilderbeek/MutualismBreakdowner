@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include "qtmutualismbreakdownermenudialog.h"
 
@@ -11,7 +11,7 @@
 #include "qtmutualismbreakdownerequilibriumdialog.h"
 #include "qtpoisoningfunctionwidget.h"
 #include "ui_qtmutualismbreakdownermenudialog.h"
-#pragma GCC diagnostic pop
+
 
 
 ribi::mb::QtMutualismBreakdownerMenuDialog::QtMutualismBreakdownerMenuDialog(QWidget *parent) :
