@@ -11,11 +11,6 @@ include(MutualismBreakdownerDesktop.pri)
 
 SOURCES += qtmain.cpp
 
-
-CONFIG += c++17
-QMAKE_CXXFLAGS += -std=c++17
-
-# Qt goes bad with -Weffc++
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 
 # Qt
