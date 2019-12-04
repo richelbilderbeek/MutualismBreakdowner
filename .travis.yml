@@ -20,9 +20,9 @@ install:
   # Codecov
   - sudo pip install codecov
   # Check dead links
-  - sudo apt-get install -qq npm
-  - npm config set strict-ssl false
-  - sudo npm install -g markdown-link-check
+  #- sudo apt-get install -qq npm
+  #- npm config set strict-ssl false
+  #- sudo npm install -g markdown-link-check
   # OCLint
   - ./install_oclint.sh
 
@@ -48,8 +48,8 @@ script:
   - ./get_code_cov.sh >/dev/null
   - codecov >/dev/null
   # Check dead links
-  - rm .travis.yml
-  - ./scripts/check_dead_links || true
+  #- rm .travis.yml
+  #- ./scripts/check_dead_links || true
   # SLOCcount
   - cd ..; sloccount --overhead 1 --personcost 22614 $my_github; cd $my_github
 
