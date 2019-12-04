@@ -77,7 +77,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="ToolMutualismBreakdowner.qrc">:/images/Time.jpg</pixmap>
+          <pixmap resource="MutualismBreakdowner.qrc">:/images/Time.jpg</pixmap>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -141,7 +141,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="ToolMutualismBreakdowner.qrc">:/images/Grid.jpg</pixmap>
+          <pixmap resource="MutualismBreakdowner.qrc">:/images/Grid.jpg</pixmap>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -304,7 +304,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="ToolMutualismBreakdowner.qrc">:/images/PrimordialSoup.png</pixmap>
+          <pixmap resource="MutualismBreakdowner.qrc">:/images/PrimordialSoup.png</pixmap>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -452,7 +452,7 @@
   <tabstop>button_save</tabstop>
  </tabstops>
  <resources>
-  <include location="ToolMutualismBreakdowner.qrc"/>
+  <include location="MutualismBreakdowner.qrc"/>
  </resources>
  <connections/>
 </ui>

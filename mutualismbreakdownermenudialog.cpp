@@ -20,7 +20,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 //Model development: Greg Fivash (major), Richel Bilderbeek (minor)
 //Programming: Richel Bilderbeek
 //
-//From http://www.richelbilderbeek.nl/ToolMutualismBreakdowner.htm
+//From http://www.github.com/richelbilderbeek/MutualismBreakdowner
 //---------------------------------------------------------------------------
 
 

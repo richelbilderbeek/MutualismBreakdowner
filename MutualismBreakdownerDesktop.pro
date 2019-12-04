@@ -35,3 +35,6 @@ INCLUDEPATH += /usr/include/qwt
 #INCLUDEPATH += /home/richel/GitHubs/RibiLibraries/mxe/usr/i686-w64-mingw32.static/qt5/include
 #LIBS += -lqwt
 #QT += svg
+
+#RESOURCES += \
+#    MutualismBreakdowner.qrc

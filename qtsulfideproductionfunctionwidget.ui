@@ -42,7 +42,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolMutualismBreakdowner.qrc">:/images/OrganicMatterSmall.jpg</pixmap>
+      <pixmap resource="MutualismBreakdowner.qrc">:/pics/OrganicMatterSmall.jpg</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -76,7 +76,7 @@
   <tabstop>box_a</tabstop>
  </tabstops>
  <resources>
-  <include location="ToolMutualismBreakdowner.qrc"/>
+  <include location="MutualismBreakdowner.qrc"/>
  </resources>
  <connections/>
 </ui>

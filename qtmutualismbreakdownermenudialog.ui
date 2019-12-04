@@ -44,7 +44,7 @@ QPushButton
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="ToolMutualismBreakdowner.qrc">:/images/EquilibriumSmall.jpg</pixmap>
+      <pixmap resource="MutualismBreakdowner.qrc">:/pics/EquilibriumSmall.jpg</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -95,7 +95,7 @@ QPushButton
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="ToolMutualismBreakdowner.qrc"/>
+  <include location="MutualismBreakdowner.qrc"/>
  </resources>
  <connections/>
 </ui>
