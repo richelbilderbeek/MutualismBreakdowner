@@ -75,7 +75,8 @@ ribi::mb::QtMutualismBreakdownerTimePlotDialog::QtMutualismBreakdownerTimePlotDi
 
   {
     //Put the dialog in the screen center
-    const QRect screen = QApplication::desktop()->screenGeometry();
+    //const QRect screen = QApplication::desktop()->screenGeometry(); // Deprecated
+    const QRect screen{QApplication::desktop()->geometry()};
     this->setGeometry(0,0,screen.width() * 9 / 10,screen.height() * 9 / 10);
     this->move( screen.center() - this->rect().center() );
   }
